@@ -28,4 +28,3 @@ has_many :users, through: :rides
         :nausea_rating => integer
         :happiness_rating => integer
         :min_height => integer
-        :ride_id => integer

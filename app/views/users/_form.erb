@@ -17,6 +17,9 @@
 
   <%= f.label :password %>
   <%= f.text_field :password %>
+
+  <%= f.label :user_admin %>
+  <%= f.check_box :admin, {id: :user_admin} %>
     
 
   <%= f.submit  %>

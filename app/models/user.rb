@@ -4,10 +4,12 @@ class User < ApplicationRecord
     has_secure_password
 
     def mood
-        if self.happiness < self.nausea
-            "sad"
-        else  
+        if self.admin 
             "happy"
+        elsif self.happiness < self.nausea
+            "sad"
+        else
+            "happy"  
         end
     end
 end
